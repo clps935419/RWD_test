@@ -22,8 +22,10 @@
         }
         hr{
             margin-bottom: 20px;
+            width:20%; display:inline-block;
             @include ipone{
                 display: none;
+                
             }
         }
     }
