@@ -22,6 +22,9 @@
         }
         hr{
             margin-bottom: 20px;
+            @include ipone{
+                display: none;
+            }
         }
     }
     .list-feature{
