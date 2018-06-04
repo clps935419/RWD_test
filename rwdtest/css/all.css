@@ -477,7 +477,7 @@ table {
     color: white; }
 
 .cartshow {
-  margin-top: 50px;
+  margin: 50px 0;
   margin-left: 2%;
   float: left;
   width: 68%; }
