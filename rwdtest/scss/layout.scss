@@ -241,6 +241,7 @@
             span{
                 float: right;
                 padding-top: 10px;
+                width: 50px;
                 @include ipad{
                     float: none;
                 }
@@ -248,7 +249,7 @@
                     float: none;
                 }
                 img{
-                    max-width: 90%;
+                    max-width: 80%;
                 }
             }
         

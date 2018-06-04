@@ -251,7 +251,8 @@ table {
           text-align: center; } }
     .footer .icon span {
       float: right;
-      padding-top: 10px; }
+      padding-top: 10px;
+      width: 50px; }
       @media (max-width: 768px) {
         .footer .icon span {
           float: none; } }
@@ -259,7 +260,7 @@ table {
         .footer .icon span {
           float: none; } }
       .footer .icon span img {
-        max-width: 90%; }
+        max-width: 80%; }
 
 @media (max-width: 415px) {
   body {
