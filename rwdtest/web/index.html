@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>西餐廳</title>
     <link rel="stylesheet" href="../css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="wrap">
         <div class="header">
             <h1><a href="#">西餐廳</a></h1>
             <ul>
-                <li><a href="http://">特色</a></li>
-                <li><a href="http://">主廚</a></li>
-                <li><a href="http://">地區</a></li>
+                <li><a href="#feature" id="bt_feature">特色</a></li>
+                <li><a href="#chef" id="bt_chef">主廚</a></li>
+                <li><a href="#area" id="bt_area">地區</a></li>
             </ul>
         </div>
         <div class="banner">
@@ -22,7 +23,7 @@
         </div>
         <div class="clearfix"></div>
         <div class="content">
-            <div class="index">
+            <div class="index" id="feature">
                 <div class="title"><hr style=" " align=center /><h2>客人總是在詢問<br><br>這麼好吃的秘訣在哪</h2><hr style=" " align=center /></div>
                  <ul class="list-feature">
                      <li>
@@ -42,7 +43,7 @@
                      </li>
                  </ul>
             </div>
-            <div class="index2">
+            <div class="index2" id="chef">
                 <ul>
                     <li><img src="../img/main_chef_brown.png" alt=""></li>
                     <li>
@@ -84,7 +85,7 @@
                     
                 </ul>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix" id="area"></div>
             <div class="index4">
                     <h3>我們的位子不太夠，要不要訂位呢?</h3>
                     <ul>
@@ -133,5 +134,14 @@
             
         </div>
     </div>
+    <script>
+       $(function(){
+            $('#bt_chef').click(function(){ $('html,body').animate({scrollTop:$('#chef').offset().top}, 1000); }); //代表一個完整的執行區塊
+            $('#bt_feature').click(function(){ $('html,body').animate({scrollTop:$('#feature').offset().top}, 1000); }); //代表一個完整的執行區塊
+            $('#bt_area').click(function(){ $('html,body').animate({scrollTop:$('#area').offset().top}, 1000); }); //代表一個完整的執行區塊
+        });
+        
+
+    </script>
 </body>
 </html>
